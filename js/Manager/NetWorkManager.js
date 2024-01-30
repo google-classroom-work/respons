@@ -1,0 +1,9 @@
+FruitGame.NetWorkManager=function()
+{const mainurl="https://zeus.livepet.top";this.Init=function(){};this.GetPlayerData=function(){if(!g_PlayerData)
+g_PlayerData=[];g_PlayerData.highScore=parseInt(localStorage.getItem("highScore"))||0;g_PlayerData.money=parseInt(localStorage.getItem("money"))||0;g_PlayerData.diamond=parseInt(localStorage.getItem("diamond"))||0;g_PlayerData.knife=parseInt(localStorage.getItem("knife"))||0;g_PlayerData.knifeList=localStorage.getItem("knifeList")?JSON.parse(localStorage.getItem("knifeList")):[1,0,0,0,0,0,0,0,0];g_PlayerData.bg=parseInt(localStorage.getItem("bg"))||0;g_PlayerData.bgList=localStorage.getItem("bgList")?JSON.parse(localStorage.getItem("bgList")):[];g_PlayerData.tzList=localStorage.getItem("tzList")?JSON.parse(localStorage.getItem("tzList")):[];g_PlayerData.buffList=localStorage.getItem("buffList")?JSON.parse(localStorage.getItem("buffList")):[0,0,0];};this.AddItem=function(type,num){if(type==1){g_PlayerData.money+=parseInt(num);localStorage.setItem("money",g_PlayerData.money);g_EventMgr.Event(Notifition.updateMoney);}else if(type==2){g_PlayerData.diamond+=parseInt(num);localStorage.setItem("diamond",g_PlayerData.diamond);}else if(type==3){for(var i=0;i<num.length;i++)
+{g_PlayerData.buffList[num[i][0]]=num[i][1];localStorage.setItem("buffList",JSON.stringify(g_PlayerData.buffList));}}}
+this.AddKnife=function(index)
+{g_PlayerData.knifeList[index]=1;localStorage.setItem("knifeList",JSON.stringify(g_PlayerData.knifeList));g_EventMgr.Event(Notifition.UpdateKnife);}
+this.SetKnife=function(index)
+{g_PlayerData.knife=index;localStorage.setItem("knife",g_PlayerData.knife);g_GameMgr.setKnifeEff();g_EventMgr.Event(Notifition.SetKnife);}
+this.AddBg=function(type){}};

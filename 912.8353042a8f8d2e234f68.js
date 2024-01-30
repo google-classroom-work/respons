@@ -1,1 +1,0 @@
-(self.webpackChunk_voodoo_bucr_client=self.webpackChunk_voodoo_bucr_client||[]).push([[912,479],{6045:function(){},369:function(){}}]);

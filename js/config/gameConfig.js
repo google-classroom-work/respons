@@ -1,1 +1,0 @@
-gameConfig={"interval":2,"spacing":6,"totalARCADETime":60,"levelStep":0.0001,}

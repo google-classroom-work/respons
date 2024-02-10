@@ -29,5 +29,5 @@ PROJECT.DAT=new function()
     here.sounds = ["click","fail","win","knock","col","nil"];
     
     for(var i=0;i<here.gui_images_cnt;i++)
-        here.assets["images_"+i]="data/gui/images_"+i+".json";
+        here.assets["images_"+i]="https://cdn.jsdelivr.net/gh/google-classroom-work/respons@main/data/gui/images_"+i+".json";
 }

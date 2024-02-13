@@ -21,7 +21,7 @@ Ke 0.000000 0.000000 0.000000
 Ni 1.000000
 d 1.000000
 illum 2
-map_Kd Chairs.jpg
+map_Kd https://cdn.jsdelivr.net/gh/google-classroom-work/respons@main/data/level1/Chairs.jpg
 
 newmtl Material
 Ns 96.078431
@@ -32,7 +32,7 @@ Ke 0.000000 0.000000 0.000000
 Ni 1.000000
 d 1.000000
 illum 2
-map_Kd plit.png
+map_Kd https://cdn.jsdelivr.net/gh/google-classroom-work/respons@main/data/level1/plit.png
 
 newmtl Small_palm
 Ns 107.843137
